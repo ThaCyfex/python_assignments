@@ -1,0 +1,13 @@
+# Ignore system and user-specific directories
+/AppData/
+/My Documents/
+/Downloads/
+/Saved Games/
+/Tracing/
+/Music/
+/Videos/
+/Desktop/
+*.log
+*.tmp
+
+/.gradle/
