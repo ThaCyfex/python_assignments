@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- I declare the document type and set up the page's meta information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- I title the page to invite users into the Batcave -->
+  <title>Contact - Batman: The Dark Knight</title>
+  <!-- I link to the shared CSS file for styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- I set up the header and navigation, marking Contact as the active page -->
+  <header>
+    <h1>Contact the Batcave</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- The main section holds a contact form inviting fans to reach out -->
+  <main>
+    <section class="contact-form-section">
+      <h2>Send Your Message to the Batcave</h2>
+      <p>
+        Hi, I invite you to drop your message here. Whether you’re a long-time fan or new to the lore, I ensure every message is checked before it reaches the Batcave!
+      </p>
+      <form id="contactForm" novalidate>
+        <!-- I start with a text input for the user's name -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your Bat-Name">
+        </div>
+
+        <!-- Next, I include an email input for the visitor’s contact information -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="your.email@domain.com">
+        </div>
+
+        <!-- I then add a textarea for the user's message -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required placeholder="Your message to the Batcave"></textarea>
+        </div>
+
+        <!-- The submit button finalizes the form -->
+        <button type="submit">Send Message</button>
+      </form>
+      <!-- I provide a div to display form validation messages -->
+      <div id="formMessage"></div>
+    </section>
+  </main>
+
+  <!-- I include a footer for consistency across all pages -->
+  <footer>
+    <p>&copy; 2025 Batman: The Dark Knight. All rights reserved.</p>
+  </footer>
+
+  <!-- I link to my JavaScript file to enable the slider and form processing -->
+  <script src="js/script.js"></script>
+</body>
+</html>

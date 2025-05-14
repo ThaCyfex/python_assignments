@@ -1,0 +1,145 @@
+/* I begin by setting up global styles with a dark theme that suits Batman */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #1a1a1a; /* A dark background for that Gotham vibe */
+  color: #e0e0e0; /* Light-colored text for readability */
+}
+
+/* I style the header with a black backdrop and ample padding */
+header {
+  background: #000;
+  color: #e0e0e0;
+  padding: 20px 0;
+}
+
+/* I center the header title and boost its size for impact */
+header h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* I create a horizontal navigation menu to guide users */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* I space out the navigation items for clarity */
+nav ul li {
+  margin: 0 15px;
+}
+
+/* I style the navigation links with a light color and add hover effects */
+nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #444;
+  border-radius: 5px;
+}
+
+/* I add padding around the main content for uniform spacing */
+main {
+  padding: 20px;
+}
+
+/* I design a responsive slider for the Batman images */
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/* I initially hide all slider images, using transitions for a smooth effect */
+.slider img {
+  width: 100%;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* I show only the active slide */
+.slider img.active {
+  display: block;
+  opacity: 1;
+}
+
+/* I position the slider controls (Prev/Next buttons) centrally */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+/* I give the slider buttons a semi-transparent look that fits the theme */
+.slider-controls button {
+  background: rgba(0, 0, 0, 0.6);
+  color: #e0e0e0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* I style the contact form section with a contrasting background */
+.contact-form-section {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* I space out each form group for clarity */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* I style form labels to be block elements with a bottom margin */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* I ensure that the form inputs and textarea match the dark theme */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+/* I complete the page layout with a footer styled similarly to the header */
+footer {
+  background: #000;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* I add media queries to ensure the website is responsive on smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  .slider-controls button {
+    padding: 8px;
+  }
+}

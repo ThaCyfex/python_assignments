@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- I begin by defining the document type as HTML5 and setting the language to English -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- I change the title to reflect our Batman theme -->
+  <title>Home - Batman: The Dark Knight</title>
+  <!-- I include my external CSS file for styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- I set up a header that contains the site title and navigation menu -->
+  <header>
+    <h1>Batman: The Dark Knight</h1>
+    <nav>
+      <ul>
+        <!-- I mark the Home link as active so you know which page you're on -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- I create an image slider showcasing three iconic images of Batman -->
+  <section class="slider">
+    <!-- Each image represents a different facet of Batman's persona -->
+    <img src="images/batman1.jpg" alt="Batman in Action" class="slider-image active">
+    <img src="images/batman2.jpg" alt="Batman on a Rooftop" class="slider-image">
+    <img src="images/batman3.jpg" alt="Batman Investigating" class="slider-image">
+    <!-- I add slider controls for manual navigation -->
+    <div class="slider-controls">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+  </section>
+
+  <!-- The main content of the home page introduces the Batman lore -->
+  <main>
+    <section>
+      <h2>Welcome to the World of Batman</h2>
+      <p>
+        I built this site to celebrate the legendary Dark Knight. Here, you’ll dive deep into Gotham's mysteries, the relentless fight against crime, and the enduring legacy of Batman. Enjoy the slider above and immerse yourself in the lore of Batman!
+      </p>
+    </section>
+  </main>
+
+  <!-- I include a footer to complete the layout -->
+  <footer>
+    <p>&copy; 2025 Batman: The Dark Knight. All rights reserved.</p>
+  </footer>
+
+  <!-- I include my JavaScript file to power interactivity (slider and form validation) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
